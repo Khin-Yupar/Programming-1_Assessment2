@@ -13,6 +13,7 @@ class Requisition:
 
     def requisition_details(self, items):
         self.total = sum(items)
+        self.approve_requisition()
         return self.total
 
     def approve_requisition(self):
